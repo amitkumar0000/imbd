@@ -27,6 +27,7 @@
         tools:text="RRR"
         android:layout_marginTop="@dimen/dp_16"
         android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
         />
 
     <TextView
@@ -38,8 +39,9 @@
         android:textSize="@dimen/sp_12"
         android:layout_marginTop="@dimen/dp_16"
         android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
         tools:text="This is demo movie title. "
-        android:maxLines="2"
+        android:maxLines="3"
         />
 
 
