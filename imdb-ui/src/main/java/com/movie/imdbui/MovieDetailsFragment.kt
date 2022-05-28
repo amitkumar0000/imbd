@@ -9,10 +9,13 @@ import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.movie.imdbui.databinding.FragmentMovieBinding
 import com.movie.imdbui.databinding.FragmentMovieDetailsBinding
+import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 private const val imageUrl = "https://image.tmdb.org/t/p/w500\n" +
         "eg: https://image.tmdb.org/t/p/w500/p60VSQL7usdxztIGokJPpHmKWdU.jpg"
+
+@AndroidEntryPoint
 internal class MovieDetailsFragment : Fragment() {
 
     @Inject

@@ -11,10 +11,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.movie.imdbcore.model.MoviesState
 import com.movie.imdbcore.model.Results
 import com.movie.imdbui.databinding.FragmentMovieBinding
+import dagger.hilt.android.AndroidEntryPoint
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import javax.inject.Inject
 
+@AndroidEntryPoint
 class MovieFragment : Fragment() {
 
     @Inject
