@@ -11,7 +11,7 @@ android {
     defaultConfig {
         minSdk MIN_SDK_VERSION.toInteger()
         targetSdk TARGET_SDK_VERSION.toInteger()
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
