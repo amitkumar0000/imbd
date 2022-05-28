@@ -62,7 +62,7 @@ internal class MovieDetailsFragment : Fragment() {
     }
 
     private fun goBack() {
-        childFragmentManager.popBackStackImmediate()
+        fragmentManager?.popBackStackImmediate()
     }
 
     override fun onDestroy() {

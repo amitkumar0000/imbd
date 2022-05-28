@@ -21,12 +21,7 @@ class MainActivity : AppCompatActivity() {
     private fun attachMovieFragment() {
         supportFragmentManager.beginTransaction()
             .add(R.id.container, MovieFragment.newInstance(), "movieFragment")
-            .addToBackStack(null)
             .commit()
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-        supportFragmentManager.popBackStackImmediate()
-    }
 }

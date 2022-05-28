@@ -91,7 +91,7 @@ class MovieFragment : Fragment() {
 
         viewModel.movieDetails = movie
         childFragmentManager.beginTransaction()
-            .replace(R.id.movieDetailsFragment, MovieDetailsFragment.newInstance(), "movieDeatilsFragment")
+            .add(R.id.movieDetailsFragment, MovieDetailsFragment.newInstance(), "movieDeatilsFragment")
             .addToBackStack(null)
             .commit()
     }
