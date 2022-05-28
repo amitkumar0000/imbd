@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MovieDetailsFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/backIcon"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_12"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/backTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="back"
+        android:textColor="@android:color/holo_blue_light"
+        app:layout_constraintStart_toEndOf="@+id/backIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Movie Title"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_marginTop="@dimen/dp_16"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_200"
+        android:id="@+id/movieImage"
+        app:layout_constraintTop_toBottomOf="@id/backTextView"
+        android:layout_marginTop="@dimen/dp_32"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="@dimen/dp_16"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/releaseData"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintStart_toEndOf="@id/movieImage"
+        android:layout_marginLeft="@dimen/dp_32"
+        app:layout_constraintTop_toTopOf="@id/movieImage"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rating"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintTop_toBottomOf="@id/releaseData"
+        app:layout_constraintStart_toEndOf="@id/movieImage"
+        android:layout_marginLeft="@dimen/dp_32"
+        app:layout_constraintTop_toTopOf="@id/movieImage"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/popularity"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintTop_toBottomOf="@id/rating"
+        app:layout_constraintStart_toEndOf="@id/movieImage"
+        android:layout_marginLeft="@dimen/dp_32"
+        app:layout_constraintTop_toTopOf="@id/movieImage"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/overviewTitle"
+        app:layout_constraintTop_toBottomOf="@id/movieImage"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dp_32"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/overviewDesc"
+        app:layout_constraintTop_toBottomOf="@id/overviewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dp_32"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

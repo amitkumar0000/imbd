@@ -1,0 +1,26 @@
+plugins {
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'
+    id 'kotlin'
+    id 'kotlin-kapt'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+
+    // HILT DI
+    implementation "com.google.dagger:hilt-core:$HILT_CORE_VERSION"
+    kapt "com.google.dagger:hilt-compiler:$HILT_CORE_VERSION"
+
+    testImplementation test_lib
+
+    // RXJava2
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava2"
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+}
