@@ -12,7 +12,7 @@ interface MovieApiService {
      * @return [Single]
      */
     @Headers("api-key: 38a73d59546aa378980a88b645f487fc")
-    @GET("/t/p/w500/p60VSQL7usdxztIGokJPpHmKWdU.jpg")
+    @GET("/t/p/w500/p60VSQL7usdxztIGokJPpHmKWdU.jpg") // TODO("removed the hardcoded image url")
     fun getMovieList(): Single<Movies>
 
 }
